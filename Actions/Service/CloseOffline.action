@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Close",
+	"Service": "/Dashboard/Services/lnp.service",
+	"Force": true,
+	"ActionResult": {
+		"_Name": "close"
+	},
+	"OnSuccess": "/Dashboard/Actions/Service/CloseOfflineSuccessMessage.action",
+	"OnFailure": "/Dashboard/Actions/Service/CloseOfflineFailureMessage.action"
+}

@@ -1,0 +1,7 @@
+{
+	"ModalPage": true,
+	"ModalPageFullscreen": false,
+	"NavigationType": "Cross",
+	"PageToOpen": "/Dashboard/Pages/Filter.page",
+	"_Type": "Action.Type.Navigation"
+}

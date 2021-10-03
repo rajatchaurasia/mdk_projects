@@ -1,0 +1,32 @@
+{
+	"Caption": "HomePage",
+	"Controls": [
+		{
+			"ClearHistory": false,
+			"Header": {
+				"DisableIconText": false,
+				"IconIsCircular": false
+			},
+			"Sections": [
+				{
+					"Items": [
+						{
+							"Image": "sap-icon://action",
+							"PreserveImageSpacing": true,
+							"Title": "Item0",
+							"Visible": true,
+							"_Name": "SideDrawerSection0Item0"
+						}
+					],
+					"Visible": true,
+					"_Name": "SideDrawerSection0",
+					"_Type": "Control.Type.SideDrawerSection"
+				}
+			],
+			"_Name": "SideDrawer0",
+			"_Type": "Control.Type.SideDrawer"
+		}
+	],
+	"_Name": "HomePage",
+	"_Type": "Page"
+}

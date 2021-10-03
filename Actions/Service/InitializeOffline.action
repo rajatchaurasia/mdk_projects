@@ -1,0 +1,17 @@
+{
+	"Service": "/Dashboard/Services/lnp.service",
+	"DefiningRequests": [
+	{
+		"Name": "Customers",
+		"Query": "Customers"
+	}
+],
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/Dashboard/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/Dashboard/Actions/Service/InitializeOfflineFailureMessage.action"
+}

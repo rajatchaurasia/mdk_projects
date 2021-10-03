@@ -1,0 +1,81 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "Line",
+							"_Type": "Control.Type.FormCell.SegmentedControl",
+							"_Name": "FormCellSegmentedControl1",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Chart Type",
+							"OnValueChange": "/Dashboard/Rules/FilterValueChange.js",
+							"ApportionsSegmentWidthsByContent": false,
+							"Segments": [
+								"Column",
+								"Line",
+								"Bar"
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.SegmentedControl",
+							"_Name": "FormCellSegmentedControl3",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Currency",
+							"OnValueChange": "/Dashboard/Rules/FilterValueChange.js",
+							"ApportionsSegmentWidthsByContent": false,
+							"Segments": [
+								"USD",
+								"MXN"
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker1",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Month",
+							"DataPaging": {
+								"ShowLoadingIndicator": true,
+								"LoadingIndicatorText": "",
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"OnValueChange": "/Dashboard/Rules/FilterValueChange.js",
+							"IsSelectedSectionEnabled": false,
+							"AllowDefaultValueIfOneItem": false,
+							"PickerItems": [
+								"January",
+								"February",
+								"March",
+								"April",
+								"May",
+								"June",
+								"July",
+								"August"
+							]
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "FilterMonth",
+	"Caption": "Filter",
+	"OnLoaded": "/Dashboard/Rules/FilterPageLoad.js",
+	"OnReturning": "/Dashboard/Rules/FilterPageLoad.js"
+}

@@ -1,0 +1,7 @@
+{
+	"ModalPage": true,
+	"ModalPageFullscreen": false,
+	"NavigationType": "Inner",
+	"PageToOpen": "/Dashboard/Pages/OverdueMonth.page",
+	"_Type": "Action.Type.Navigation"
+}

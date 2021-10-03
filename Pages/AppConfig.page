@@ -1,0 +1,158 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+					],
+					"Footer": {
+						"_Name": "SectionFooter0",
+						"Caption": "Change Passcode",
+						"AccessoryType": "disclosureIndicator",
+						"Visible": true,
+						"UseBottomPadding": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell5"
+				},
+				{
+					"Controls": [
+					],
+					"Footer": {
+						"_Name": "SectionFooter1",
+						"Caption": "Support",
+						"AccessoryType": "disclosureIndicator",
+						"Visible": true,
+						"OnPress": "/Dashboard/Actions/NavToSupport.action",
+						"UseBottomPadding": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell2"
+				},
+				{
+					"Controls": [
+					],
+					"Footer": {
+						"_Name": "SectionFooter2",
+						"Caption": "Privacy Policy",
+						"AccessoryType": "disclosureIndicator",
+						"Visible": true,
+						"OnPress": "/Dashboard/Rules/OpenPrivacyPolicy.js",
+						"UseBottomPadding": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SegmentedControl",
+							"_Name": "FormCellSegmentedControl1",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Styles": {
+								"Caption": "fontSize"
+							},
+							"Caption": "Map Type",
+							"OnValueChange": "/Dashboard/Rules/SetMapType.js",
+							"ApportionsSegmentWidthsByContent": false,
+							"Segments": [
+								"Standard",
+								"Satellite",
+								"Hybrid",
+								"Muted Standard",
+								"Satellite Flyover",
+								"Hybrid Flyover"
+							]
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell4"
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Title": "Sync",
+							"TextAlignment": "center",
+							"OnPress": "/Dashboard/Actions/Service/SyncStartedMessage.action"
+						},
+						{
+							"Value": "      Last Sync: 04-Jun-2021 at 12:06 AM",
+							"_Type": "Control.Type.FormCell.Note",
+							"_Name": "FormCellNote0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"MaxNumberOfLines": 1
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Styles": {
+								"Value": "logoutCaptionColor"
+							},
+							"Title": "Logout",
+							"TextAlignment": "center",
+							"ButtonType": "Normal",
+							"OnPress": "/Dashboard/Actions/Logout.action"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "AppConfig",
+	"Caption": "Profile",
+	"OnLoaded": "/Dashboard/Rules/SetUserMapType.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Dashboard/Actions/Close.action",
+				"Text":"Close"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Text":"Done",
+			
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Dashboard/Actions/CloseAppConfigPage.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
+}

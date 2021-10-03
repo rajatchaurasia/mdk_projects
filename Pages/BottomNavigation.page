@@ -1,0 +1,55 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.BottomNavigation",
+			"_Name": "BottomNavigation0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Sales Order Overview ",
+					"Image": "sap-icon://overview-chart",
+					"PageToOpen": "/Dashboard/Pages/SalesOrderOverview.page",
+					"_Name": "TabItem1"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Invoice Processing Analysis",
+					"Image": "sap-icon://customer-financial-fact-sheet",
+					"PageToOpen": "/Dashboard/Pages/InvoiceOverview.page",
+					"_Name": "TabItem2"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Delivery Ratio",
+					"Image": "sap-icon://shipping-status",
+					"PageToOpen": "/Dashboard/Pages/DeliveryRatioOverview.page",
+					"_Name": "TabItem3"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Overdue Receivables",
+					"Image": "sap-icon://time-overtime",
+					"PageToOpen": "/Dashboard/Pages/OverdueOverview.page",
+					"_Name": "TabItem4"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BottomNavigation",
+	"Caption": "/Dashboard/Rules/GetCaption.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem1",
+				"Icon": "sap-icon://filter",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Dashboard/Actions/NavToFilter.action",
+				"Caption": "Item"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
+}

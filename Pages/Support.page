@@ -1,0 +1,44 @@
+{
+	"Caption": "Support",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ContactCells": [
+						{
+							"ContactCell": {
+								"ActivityItems": [
+									{
+										"ActivityType": "Phone",
+										"ActivityValue": "1.800.872.5384"
+									},
+									{
+										"ActivityType": "VideoCall",
+										"ActivityValue": "000-000-0000"
+									},
+									{
+										"ActivityType": "Email",
+										"ActivityValue": "support@levi.com"
+									}
+									
+								],
+								"Headline": "Contact Us",
+								"Visible": true
+							}
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable1",
+					"_Type": "Section.Type.ContactCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Support",
+	"_Type": "Page"
+}

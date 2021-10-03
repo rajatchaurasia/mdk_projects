@@ -1,0 +1,130 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"AnalyticCards": [
+						{
+							"DataSeries": {
+								"Data": "{Data}",
+								"CategoryTitles": "{CategoryTitles}",
+								"CategoryLabelVisible": true,
+								"NumericLabelVisible": true
+							},
+							"_Type": "Card.Type.Chart",
+							"Target": "/Dashboard/Rules/SalesOrderOverviewWeeklyReport.js",
+							"_Name": "SectionAnalyticCardCell1",
+							"ChartType": "{ChartType}",
+							"Title": "Sales Order Overview",
+							"Subtitle": "Total Value",
+							"IsTrendUpward": true,
+							"StatusText": "{Subtitle}",
+							"LeadingUnit": "{LeadingUnit}",
+							"Metric": "{Metric}",
+							"TrailingUnit": "{Currency}",
+							"SeriesTitle": "{SeriesTitles}",
+							"SeriesColor": "{SeriesColor}",
+							"OnPress": "/Dashboard/Actions/NavToStatusWeek.action"
+						},
+						{
+							"DataSeries": {
+								"Data": "{Data}",
+								"CategoryTitles": "{CategoryTitles}",
+								"CategoryLabelVisible": true,
+								"NumericLabelVisible": true
+							},
+							"_Type": "Card.Type.Chart",
+							"Target": "/Dashboard/Rules/SalesOrderOverviewMonthlyReport.js",
+							"_Name": "SectionAnalyticCardCell2",
+							"ChartType": "{ChartType}",
+							"Title": "Invoice Processing Analysis",
+							"Subtitle": "Sales",
+							"IsTrendUpward": true,
+							"StatusText": "{Subtitle}",
+							"LeadingUnit": "{LeadingUnit}",
+							"Metric": "{Metric}",
+							"TrailingUnit": "{Currency}",
+							"SeriesTitle": "{SeriesTitles}",
+							"SeriesColor": "{SeriesColor}",
+							"OnPress": "/Dashboard/Actions/NavToStatusMonth.action"
+						},
+						{
+							"DataSeries": {
+								"Data": "{Data}",
+								"CategoryTitles": "{CategoryTitles}",
+								"CategoryLabelVisible": true,
+								"NumericLabelVisible": true
+							},
+							"_Type": "Card.Type.Chart",
+							"Target": "/Dashboard/Rules/SalesOrderOverviewQuarterly.js",
+							"_Name": "SectionAnalyticCardCell0",
+							"ChartType": "{ChartType}",
+							"Title": "Delivery Ratio",
+							"Subtitle": "Sales",
+							"IsTrendUpward": true,
+							"StatusText": "{Subtitle}",
+							"LeadingUnit": "{LeadingUnit}",
+							"Metric": "{Metric}",
+							"TrailingUnit": "{Currency}",
+							"SeriesTitle": "{SeriesTitles}",
+							"SeriesColor": "{SeriesColor}",
+							"OnPress": "/Dashboard/Actions/NavToStatusQuarter.action"
+						},
+						{
+							"DataSeries": {
+								"Data": "{Data}",
+								"CategoryTitles": "{CategoryTitles}",
+								"CategoryLabelVisible": true,
+								"NumericLabelVisible": true
+							},
+							"_Type": "Card.Type.Chart",
+							"Target": "/Dashboard/Rules/SalesOrderOverviewQuarterly.js",
+							"_Name": "CardTypeChart0",
+							"ChartType": "{ChartType}",
+							"Title": "Overdue Receivables",
+							"Subtitle": "Sales",
+							"TrendImage": "res://arrow_up.png",
+							"IsTrendUpward": true,
+							"TrendTitle": "57.8%",
+							"StatusText": "{Subtitle}",
+							"LeadingUnit": "{LeadingUnit}",
+							"Metric": "{Metric}",
+							"TrailingUnit": "{Currency}",
+							"SeriesTitle": "{SeriesTitles}",
+							"SeriesColor": "{SeriesColor}",
+							"OnPress": "/Dashboard/Actions/NavToStatusQuarter.action"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"_Name": "SectionHeader1",
+						"UseTopPadding": false
+					},
+					"_Type": "Section.Type.AnalyticCardCollection",
+					"_Name": "SectionAnalyticCardCollection0",
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderOverview",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"Icon": "sap-icon://filter",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Dashboard/Actions/NavToFilter.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
+}

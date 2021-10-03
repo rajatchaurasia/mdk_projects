@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/Dashboard/Pages/StatusMonth.page",
+	"ModalPage": true,
+	"ModalPageFullscreen": true,
+	"NavigationType": "Inner"
+}

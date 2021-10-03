@@ -1,0 +1,115 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"KPIHeader": {
+						"KPIItems": [
+							{
+								"_Name": "KPIItem0",
+								"MetricItems": [
+									{
+										"LeadingUnit": "Overdue Receivables",
+										"_Name": "MetricItem1"
+									}
+								]
+							}
+						]
+					},
+					"_Type": "Section.Type.KPIHeader",
+					"_Name": "SectionKPIHeader0",
+					"Visible": true
+				},
+				{
+					"AnalyticCards": [
+						{
+							"DataSeries": {
+								"Data": "{Data}",
+								"CategoryTitles": "{CategoryTitles}",
+								"CategoryLabelVisible": true,
+								"NumericLabelVisible": true
+							},
+							"_Type": "Card.Type.Chart",
+							"Target": "/Dashboard/Rules/OverdueWeek.js",
+							"_Name": "SectionAnalyticCardCell1",
+							"ChartType": "{ChartType}",
+							"Title": "Weekly Report",
+							"Subtitle": "Overdue Amount",
+							"IsTrendUpward": true,
+							"StatusText": "{Subtitle}",
+							"LeadingUnit": "{LeadingUnit}",
+							"Metric": "{Metric}",
+							"TrailingUnit": "{Currency}",
+							"SeriesTitle": "{SeriesTitles}",
+							"SeriesColor": "{SeriesColor}",
+							"OnPress": "/Dashboard/Actions/NavToOverdueWeek.action"
+						},
+						{
+							"DataSeries": {
+								"Data": "{Data}",
+								"CategoryTitles": "{CategoryTitles}",
+								"CategoryLabelVisible": true,
+								"NumericLabelVisible": true
+							},
+							"_Type": "Card.Type.Chart",
+							"Target": "/Dashboard/Rules/OverdueMonth.js",
+							"_Name": "SectionAnalyticCardCell2",
+							"ChartType": "{ChartType}",
+							"Title": "Monthly Report",
+							"Subtitle": "Overdue Amount",
+							"IsTrendUpward": true,
+							"StatusText": "{Subtitle}",
+							"LeadingUnit": "{LeadingUnit}",
+							"Metric": "{Metric}",
+							"TrailingUnit": "{Currency}",
+							"SeriesTitle": "{SeriesTitles}",
+							"SeriesColor": "{SeriesColor}",
+							"OnPress": "/Dashboard/Actions/NavToOverdueMonth.action"
+						},
+						{
+							"DataSeries": {
+								"Data": "{Data}",
+								"CategoryTitles": "{CategoryTitles}",
+								"CategoryLabelVisible": true,
+								"NumericLabelVisible": true
+							},
+							"_Type": "Card.Type.Chart",
+							"Target": "/Dashboard/Rules/OverdueQuarter.js",
+							"_Name": "SectionAnalyticCardCell0",
+							"ChartType": "{ChartType}",
+							"Title": "Quarterly Report",
+							"Subtitle": "Overdue Amount",
+							"IsTrendUpward": true,
+							"StatusText": "{Subtitle}",
+							"LeadingUnit": "{LeadingUnit}",
+							"Metric": "{Metric}",
+							"TrailingUnit": "{Currency}",
+							"SeriesTitle": "{SeriesTitles}",
+							"SeriesColor": "{SeriesColor}",
+							"OnPress": "/Dashboard/Actions/NavToOverdueQuarter.action"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Footer": {
+						"_Name": "SectionFooter0",
+						"Visible": true,
+						"UseBottomPadding": false
+					},
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": false
+					},
+					"_Type": "Section.Type.AnalyticCardCollection",
+					"_Name": "SectionAnalyticCardCollection0",
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "OverdueOverview"
+}

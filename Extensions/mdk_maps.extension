@@ -1,0 +1,46 @@
+{
+	"Class": "MyMapClass",
+	"Control": "MyMapExtension",
+	"ExtensionPropertiesSchema": {
+		"BindType": "",
+		"properties": {
+			"Prop": {
+				"BindType": "",
+				"properties": {
+					"City": {
+						"BindType": "",
+						"type": "string"
+					},
+					"Country": {
+						"BindType": "",
+						"type": "string"
+					},
+					"HouseNumber": {
+						"BindType": "",
+						"type": "string"
+					},
+					"LastName": {
+						"BindType": "",
+						"type": "string"
+					},
+					"MapType": {
+						"BindType": "",
+						"type": "string"
+					},
+					"PostalCode": {
+						"BindType": "",
+						"type": "string"
+					},
+					"Street": {
+						"BindType": "",
+						"type": "string"
+					}
+				},
+				"type": "object"
+			}
+		},
+		"type": "object"
+	},
+	"Module": "MyMapModule",
+	"_Type": "Register.Type.ExtensionControl"
+}

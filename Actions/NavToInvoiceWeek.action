@@ -1,0 +1,7 @@
+{
+	"ModalPage": true,
+	"ModalPageFullscreen": false,
+	"NavigationType": "Inner",
+	"PageToOpen": "/Dashboard/Pages/InvoiceWeek.page",
+	"_Type": "Action.Type.Navigation"
+}

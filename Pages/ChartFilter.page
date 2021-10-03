@@ -1,0 +1,11 @@
+{
+	"Caption": "ChartFilter",
+	"Controls": [
+		{
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ChartFilter",
+	"_Type": "Page"
+}

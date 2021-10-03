@@ -1,0 +1,6 @@
+{
+	"ModalPage": true,
+	"NavigationType": "Inner",
+	"PageToOpen": "/Dashboard/Pages/ChartModal.page",
+	"_Type": "Action.Type.Navigation"
+}

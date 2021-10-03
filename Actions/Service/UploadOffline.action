@@ -1,0 +1,9 @@
+{
+	"Service": "/Dashboard/Services/lnp.service",
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/Dashboard/Actions/Service/DownloadStartedMessage.action",
+	"OnFailure": "/Dashboard/Actions/Service/SyncFailureMessage.action"
+}

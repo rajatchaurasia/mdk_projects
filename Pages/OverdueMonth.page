@@ -1,0 +1,96 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"KPIHeader": {
+						"KPIItems": [
+							{
+								"_Name": "KPIItem0",
+								"CaptionLabel": " ",
+								"MetricItems": [
+									{
+										"LeadingUnit": "Monthly Report"
+									}
+								]
+							}
+						]
+					},
+					"_Type": "Section.Type.KPIHeader",
+					"_Name": "SectionKPIHeader0",
+					"Visible": true
+				},
+				{
+					"ChartContent": {
+						"Title": "{Title}",
+						"Subtitle": "Overdue Amount",
+						"StatusText": "{Subtitle}",
+						"IsReadOnly": false,
+						"ChartView": {
+							"ChartType": "{ChartType}",
+							"SeriesTitles": "{SeriesTitles}",
+							"SeriesColor": "{SeriesColor}",
+							"Data": "{Data}",
+							"CategoryTitles": "{CategoryTitles}",
+							"CategoryAxisTitle": "{CategoryAxis}",
+							"ValueAxisTitle": "Overdue Amount",
+							"TrendItems": []
+						},
+						"SummaryView": {
+							"AggregateItem": {
+								"Value": {
+									"Function": "SUM",
+									"Metrics": "{Data}"
+								}
+							}
+						},
+						"Target": "/Dashboard/Rules/OverdueMonth.js"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.ChartContent",
+					"_Name": "SectionChartContent0",
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": false
+					},
+					"Footer": {
+						"_Name": "SectionFooter0",
+						"Visible": true,
+						"UseBottomPadding": false
+					},
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "OverdueMonth",
+	"Caption": "Overdue Receivables",
+	"OnReturning": "/Dashboard/Rules/FilterChangeRender.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Dashboard/Actions/ClosePage.action",
+				"Text": "Close"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Icon": "sap-icon://filter",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Dashboard/Actions/NavToFilterMonth.action",
+				"Caption": ""
+			}
+		],
+		"_Name": "ActionBar0"
+	}
+}

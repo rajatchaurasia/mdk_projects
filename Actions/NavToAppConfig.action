@@ -1,0 +1,7 @@
+{
+	"ModalPage": true,
+	"ModalPageFullscreen": true,
+	"NavigationType": "Cross",
+	"PageToOpen": "/Dashboard/Pages/AppConfig.page",
+	"_Type": "Action.Type.Navigation"
+}

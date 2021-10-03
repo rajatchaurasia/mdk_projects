@@ -1,0 +1,74 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"KPIHeader": {
+						"KPIItems": [
+							{
+								"_Name": "KPIItem0",
+								"MetricItems": [
+									{
+										"Value": "54.52K",
+										"TrailingUnit": "  MXN"
+									}
+								],
+								"ShowProgress": false
+							}
+						]
+					},
+					"_Type": "Section.Type.KPIHeader",
+					"_Name": "SectionKPIHeader0",
+					"Visible": true
+				},
+				{
+					"ChartContent": {
+						"IsReadOnly": false,
+						"ChartView": {
+							"ChartType": "{ChartType}",
+							"SeriesTitles": "{SeriesTitles}",
+							"SeriesColor": "{SeriesColor}",
+							"Data": "{Data}",
+							"CategoryTitles": "{CategoryTitles}",
+							"CategoryAxisTitle": "Status",
+							"ValueAxisTitle": "Open & In Processing",
+							"TrendItems": [
+							]
+						},
+						"SummaryView": {
+							"SeriesTitles": [
+							],
+							"AggregateItem": {
+								"Title": "Total Leads",
+								"Value": {
+									"Function": "SUM",
+									"Metrics": "{AggregateItems}"
+								}
+							}
+						},
+						"Target": "/Dashboard/Rules/GetChartData.js"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.ChartContent",
+					"_Name": "SectionChartContent0",
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": false
+					},
+					"Footer": {
+						"_Name": "SectionFooter0",
+						"Visible": true,
+						"UseBottomPadding": false
+					},
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Map1"
+}

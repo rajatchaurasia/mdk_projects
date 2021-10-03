@@ -1,0 +1,128 @@
+{
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"KPIHeader": {
+						"KPIItems": [
+							{
+								"MetricItems": [
+									{
+										"LeadingUnit": "Overdue Receivables",
+										"TrailingUnit": "",
+										"Value": ""
+									}
+								]
+							},
+							{
+								"MetricItems": [
+									{
+										"LeadingUnit": "",
+										"TrailingUnit": "MXN",
+										"Value": "122.13M"
+									}
+								]
+							}
+						]
+					},
+					"Visible": true,
+					"_Name": "SectionKPIHeader0",
+					"_Type": "Section.Type.KPIHeader"
+				},
+				{
+					"AnalyticCards": [
+						{
+							"ChartType": "Column",
+							"DataSeries": {
+								"CategoryLabelVisible": true,
+								"CategoryTitles": [
+									"C1",
+									"C2",
+									"C3",
+									"C4",
+									"C5",
+									"C6"
+								],
+								"Data": [
+									[
+										431000,
+										494000,
+										491000,
+										536000,
+										675000,
+										680000
+									]
+								],
+								"NumericLabelVisible": false
+							},
+							"IsTrendUpward": true,
+							"OnPress": "/Dashboard/Actions/NavToChartModal.action",
+							"SeriesColor": [
+								"#5899DA"
+							],
+							"SeriesTitle": [
+								"S1"
+							],
+							"Subtitle": "Overdue Amount",
+							"_Name": "SectionAnalyticCardCell1",
+							"_Type": "Card.Type.Chart"
+						},
+						{
+							"ChartType": "Line",
+							"DataSeries": {
+								"CategoryLabelVisible": true,
+								"CategoryTitles": [
+									"C1",
+									"C2",
+									"C3",
+									"C4",
+									"C5",
+									"C6"
+								],
+								"Data": [
+									[
+										431000,
+										494000,
+										491000,
+										536000,
+										675000,
+										680000
+									]
+								],
+								"NumericLabelVisible": false
+							},
+							"IsTrendUpward": true,
+							"OnPress": "/Dashboard/Actions/NavToChartModal.action",
+							"SeriesColor": [
+								"#32a852"
+							],
+							"SeriesTitle": [
+								"S2"
+							],
+							"Subtitle": "No. of Open Items",
+							"_Name": "SectionAnalyticCardCell12",
+							"_Type": "Card.Type.Chart"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Footer": {
+						"UseBottomPadding": false,
+						"Visible": true
+					},
+					"Header": {
+						"UseTopPadding": false
+					},
+					"Visible": true,
+					"_Name": "SectionAnalyticCardCollection0",
+					"_Type": "Section.Type.AnalyticCardCollection"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Charts2",
+	"_Type": "Page"
+}

@@ -1,0 +1,106 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/Dashboard/Actions/ClosePage.action",
+				"Position": "Right",
+				"SystemItem": "Done",
+				"Caption": "",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Overdue Receivables",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"KPIHeader": {
+						"KPIItems": [
+							{
+								"MetricItems": [
+									{
+										"LeadingUnit": "",
+										"TrailingUnit": "MXN",
+										"Value": "122.13M"
+									}
+								]
+							}
+						]
+					},
+					"Visible": true,
+					"_Name": "SectionKPIHeader0",
+					"_Type": "Section.Type.KPIHeader"
+				},
+				{
+					"ChartContent": {
+						"ChartView": {
+							"CategoryAxisTitle": "Category Axis Title",
+							"CategoryTitles": [
+								"C1",
+								"C2",
+								"C3",
+								"C4",
+								"C5",
+								"C6"
+							],
+							"ChartType": "Column",
+							"Data": [
+								[
+									431000,
+									494000,
+									491000,
+									536000,
+									675000,
+									680000
+								]
+							],
+							"SeriesColor": [
+								"#5899DA"
+							],
+							"SeriesTitles": [
+								"S1"
+							],
+							"TrendItems": [
+								{
+									"TrendImage": "res://arrow_up.png",
+									"TrendTitle": "100%"
+								}
+							],
+							"ValueAxisTitle": "Value Axis Title"
+						},
+						"IsReadOnly": false,
+						"SummaryView": {
+							"AggregateItem": {
+								"Title": "Total Sales",
+								"Value": {
+									"Function": "SUM",
+									"Metrics": [
+										"3307"
+									]
+								}
+							},
+							"SeriesTitles": [
+								"Sales for S1"
+							]
+						}
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"UseTopPadding": false
+					},
+					"Visible": true,
+					"_Name": "SectionChartContent0",
+					"_Type": "Section.Type.ChartContent"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ChartModel",
+	"_Type": "Page"
+}

@@ -1,0 +1,5 @@
+{
+	"DismissModal": "Action.Type.ClosePage.Completed",
+	"OnSuccess": "/Dashboard/Rules/FilterChangeRender.js",
+	"_Type": "Action.Type.ClosePage"
+}

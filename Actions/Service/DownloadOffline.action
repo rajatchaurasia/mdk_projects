@@ -1,0 +1,14 @@
+{
+	"Service": "/Dashboard/Services/lnp.service",
+	"DefiningRequests": [
+	{
+		"Name": "Customers",
+		"Query": "Customers"
+	}
+],
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnFailure": "/Dashboard/Actions/Service/SyncFailureMessage.action"
+}

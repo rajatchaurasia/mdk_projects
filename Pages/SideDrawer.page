@@ -1,0 +1,36 @@
+{
+	"Caption": "SideDrawer",
+	"Controls": [
+		{
+			"AlwaysShowDrawerButton": true,
+			"ClearHistory": false,
+			"Header": {
+				"Alignment": "left",
+				"DisableIconText": false,
+				"Headline": "Headline",
+				"IconIsCircular": false,
+				"SubHeadline": "Sub Headline"
+			},
+			"Sections": [
+				{
+					"Items": [
+						{
+							"Image": "sap-icon://action",
+							"Title": "Item0",
+							"Visible": true,
+							"_Name": "SideDrawerSection0Item0"
+						}
+					],
+					"PreserveImageSpacing": true,
+					"SeparatorEnabled": true,
+					"Visible": true,
+					"_Name": "SideDrawerSection0"
+				}
+			],
+			"_Name": "SideDrawer0",
+			"_Type": "Control.Type.SideDrawer"
+		}
+	],
+	"_Name": "SideDrawer",
+	"_Type": "Page"
+}

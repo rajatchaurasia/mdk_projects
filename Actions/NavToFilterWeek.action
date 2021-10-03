@@ -1,0 +1,7 @@
+{
+	"ModalPage": false,
+	"ModalPageFullscreen": false,
+	"NavigationType": "Cross",
+	"PageToOpen": "/Dashboard/Pages/FilterWeek.page",
+	"_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,6 @@
+{
+	"ModalPage": true,
+	"NavigationType": "Cross",
+	"PageToOpen": "/Dashboard/Pages/Charts2.page",
+	"_Type": "Action.Type.Navigation"
+}

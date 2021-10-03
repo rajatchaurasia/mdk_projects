@@ -1,0 +1,275 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": [
+								"Peru"
+							],
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Select Region",
+							"DataPaging": {
+								"PageSize": 50,
+								"ShowLoadingIndicator": false
+							},
+							"PickerPrompt": "Please select one single item",
+							"OnValueChange": "/Dashboard/Rules/RedrawMap.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": [
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/AR.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Argentina"
+									},
+									"ReturnValue": "Argentina"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/BO.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Bolivia"
+									},
+									"ReturnValue": "Bolivia"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/BR.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Brazil"
+									},
+									"ReturnValue": "Brazil"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/CH.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Chile"
+									},
+									"ReturnValue": "Chile"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/CO.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Colombia"
+									},
+									"ReturnValue": "Colombia"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/EC.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Ecuador"
+									},
+									"ReturnValue": "Ecuador"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/MX.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Mexico"
+									},
+									"ReturnValue": "Mexico"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/PA.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Panama"
+									},
+									"ReturnValue": "Panama"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/PAR.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Paraguay"
+									},
+									"ReturnValue": "Paraguay"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/PE.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Peru"
+									},
+									"ReturnValue": "Peru"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/UR.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Uruguay"
+									},
+									"ReturnValue": "Uruguay"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/US.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "United States"
+									},
+									"ReturnValue": "United States"
+								},
+								{
+									"ObjectCell": {
+										"DetailImage": "/Dashboard/Images/flags/VE.png",
+										"DetailImageIsCircular": false,
+										"Icons": [
+										],
+										"PreserveIconStackSpacing": true,
+										"Styles": {
+										},
+										"Title": "Venezuela"
+									},
+									"ReturnValue": "Venezuela"
+								}
+							]
+						}
+					],
+					"Header": {
+						"_Name": "SectionHeader2",
+						"UseTopPadding": false
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"_Type": "Section.Type.Extension",
+					"Target": "/Dashboard/Rules/GetLocations.js",
+					"_Name": "SectionExtension0",
+					"Header": {
+						"_Name": "SectionHeader1",
+						"UseTopPadding": false
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Height": 1000,
+					"OnPress": "/Dashboard/Actions/NavToSalesOrder.action",
+					"Module": "MyMapModule",
+					"Control": "MyMapExtension",
+					"Class": "MyMapClass",
+					"ExtensionProperties": {
+						"Prop": {
+							"City": "{City}",
+							"Country": "{Country}",
+							"HouseNumber": "{HouseNumber}",
+							"LastName": "{LastName}",
+							"MapType": "{MapType}",
+							"PostalCode": "",
+							"Street": ""
+						}
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Leadership Dashboard",
+	"ActionBar": {
+		"Items": [
+			{
+				"Text": "Infosys",
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"Icon": "/Dashboard/Images/Levis_app_logo_120px.png",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Dashboard/Actions/NavToSalesOrder.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"Icon": "sap-icon://menu2",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Dashboard/Actions/NavToAppConfig.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
+}
